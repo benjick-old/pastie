@@ -7,7 +7,6 @@ Template.create.events({
 		else {
 			paste = CryptoJS.AES.encrypt(event.target.paste.value, event.target.password.value).toString();
 		}
-		//console.log(paste);
 		Pastes.insert({
 			paste: paste,
 			title: event.target.title.value
@@ -20,7 +19,6 @@ Template.create.events({
 					Router.go('/paste/' + id + '#' + event.target.password.value);
 				}
 			}
-			console.log(id);
 		});
 	}
 });
