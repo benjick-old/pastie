@@ -13,10 +13,12 @@ Template.create.events({
 		}, function (err, id) {
 			if(!err) {
 				if(event.target.password.value === '') {
-					Router.go('/paste/' + id);
+					Router.go('paste', {
+						_id: id
+					});
 				}
 				else {
-					Router.go('/paste/' + id + '#' + event.target.password.value);
+					Router.go('paste', { _id: id }, {hash: event.target.password.value});
 				}
 			}
 		});
