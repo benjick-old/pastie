@@ -17,7 +17,7 @@ Template.create.events({
 					Router.go('/paste/' + id);
 				}
 				else {
-					Router.go('/paste/' + id + '#password=' + event.target.password.value);
+					Router.go('/paste/' + id + '#' + event.target.password.value);
 				}
 			}
 			console.log(id);
