@@ -1,0 +1,1 @@
+Pastes.permit(['insert']).apply();

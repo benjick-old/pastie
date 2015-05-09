@@ -5,9 +5,9 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
 jparker:crypto-aes
 twbs:bootstrap
 iron:router
 multiply:iron-router-progress
 msavin:mongol
+ongoworks:security
