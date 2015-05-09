@@ -1,3 +1,9 @@
 <template name="paste">
-	show paste here
+	{{#if paste.title}}
+		<h1>{{paste.title}}</h1>
+	{{/if}}
+
+	<pre class="prettyprint">
+{{paste.paste}}
+	</pre>
 </template>
